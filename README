@@ -1,0 +1,8 @@
+A rather simple python keystroke logger client/server. 
+
+The client is meant for win32 since it relies on pyhook which seems to be only win32.
+Client sends keystrokes over UDP port 6666 by default to any IP address specified via
+the command line: keylogClient -s <ip> -p <port>
+
+The server receives the keys via udp and prints to screen, translating carrage returns, etc to chr(X); i.e. cr=chr(13)
+
